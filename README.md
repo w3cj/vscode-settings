@@ -6,6 +6,13 @@
 
 # Extensions
 
+## Themes/Color
+
+* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=coenraads.bracket-pair-colorizer)
+  * Matching parenthesis and curly brackets to with colors
+* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
+* [Theme - Seti-Monokai](https://marketplace.visualstudio.com/items?itemName=SmukkeKim.theme-setimonokai)
+
 ## Workflow
 
 * [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
@@ -37,13 +44,6 @@
 * [Beautify](https://marketplace.visualstudio.com/items?itemName=hookyqr.beautify)
   * Automatically format javascript, JSON, CSS, Sass, and HTML files.
 
-## Themes/Color
-
-* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=coenraads.bracket-pair-colorizer)
-  * Matching parenthesis and curly brackets to with colors
-* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-* [Theme - Seti-Monokai](https://marketplace.visualstudio.com/items?itemName=SmukkeKim.theme-setimonokai)
-
 ## Useful/Extra
 
 * [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
@@ -57,33 +57,50 @@
 
 ```json
 {
-  "emmet.showAbbreviationSuggestions": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnPaste": false,
-  "workbench.colorTheme": "Seti Monokai",
-  "window.zoomLevel": 2,
-  "workbench.iconTheme": "eq-material-theme-icons",
-  "editor.fontSize": 21,
-  "editor.fontLigatures": true,
-  "terminal.integrated.fontSize": 16,
-  "files.autoSave": "onFocusChange",
-  "editor.fontFamily": "Anonymous Pro",
-  "editor.tabSize": 2,
-  "editor.lineHeight": 0,
-  "workbench.colorCustomizations": {
-      "activityBarBadge.background": "#C6FF00",
-      "list.activeSelectionForeground": "#C6FF00",
-      "list.inactiveSelectionForeground": "#C6FF00",
-      "list.highlightForeground": "#C6FF00",
-      "scrollbarSlider.activeBackground": "#C6FF0050",
-      "editorSuggestWidget.highlightForeground": "#C6FF00",
-      "textLink.foreground": "#C6FF00",
-      "progressBar.background": "#C6FF00",
-      "pickerGroup.foreground": "#C6FF00",
-      "tab.activeBorder": "#C6FF00",
-      "notificationLink.foreground": "#C6FF00"
-  },
-  "editor.minimap.enabled": false,
-  "vsicons.projectDetection.disableDetect": true
+    "editor.snippetSuggestions": "top",
+    "editor.fontFamily": "Anonymous Pro",
+    "workbench.iconTheme": "eq-material-theme-icons",
+    "workbench.colorTheme": "Seti Monokai",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "editor.fontSize": 21,
+    "editor.formatOnPaste": false,
+    "editor.minimap.enabled": false,
+    "editor.fontLigatures": true,
+    "editor.lineHeight": 0,
+    "terminal.integrated.fontSize": 16,
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 1,
+    "emmet.showAbbreviationSuggestions": false,
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#C6FF00",
+        "list.activeSelectionForeground": "#C6FF00",
+        "list.inactiveSelectionForeground": "#C6FF00",
+        "list.highlightForeground": "#C6FF00",
+        "scrollbarSlider.activeBackground": "#C6FF0050",
+        "editorSuggestWidget.highlightForeground": "#C6FF00",
+        "textLink.foreground": "#C6FF00",
+        "progressBar.background": "#C6FF00",
+        "pickerGroup.foreground": "#C6FF00",
+        "tab.activeBorder": "#C6FF00",
+        "notificationLink.foreground": "#C6FF00"
+    },
+    "eslint.validate": [
+        {
+            "language": "vue",
+            "autoFix": true
+        },
+        {
+            "language": "html",
+            "autoFix": true
+        },
+        {
+            "language": "javascript",
+            "autoFix": true
+        }
+    ],
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "workbench.startupEditor": "newUntitledFile"
 }
 ```
