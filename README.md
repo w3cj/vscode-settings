@@ -8,7 +8,10 @@
 
 ## Themes/Color
 
-* [Theme - Seti-Monokai](https://marketplace.visualstudio.com/items?itemName=SmukkeKim.theme-setimonokai)
+* Original theme I use in most videos:
+  * [Theme - Seti-Monokai](https://marketplace.visualstudio.com/items?itemName=SmukkeKim.theme-setimonokai)
+* I've been using this darker modification of the above theme lately:
+  * [Seti-Black](https://marketplace.visualstudio.com/items?itemName=bobsparadox.seti-black)
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 * [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=coenraads.bracket-pair-colorizer)
   * Matching parenthesis and curly brackets to with colors
@@ -57,35 +60,24 @@
 
 ```json
 {
-    "editor.snippetSuggestions": "top",
-    "editor.fontFamily": "Anonymous Pro",
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "workbench.colorTheme": "Seti Monokai",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "files.autoSave": "onFocusChange",
-    "editor.tabSize": 2,
-    "editor.fontSize": 21,
-    "editor.formatOnPaste": false,
-    "editor.minimap.enabled": false,
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 0,
-    "terminal.integrated.fontSize": 16,
     "explorer.openEditors.visible": 0,
-    "window.zoomLevel": 1,
+    "editor.snippetSuggestions": "top",
     "emmet.showAbbreviationSuggestions": false,
-    "workbench.colorCustomizations": {
-        "activityBarBadge.background": "#C6FF00",
-        "list.activeSelectionForeground": "#C6FF00",
-        "list.inactiveSelectionForeground": "#C6FF00",
-        "list.highlightForeground": "#C6FF00",
-        "scrollbarSlider.activeBackground": "#C6FF0050",
-        "editorSuggestWidget.highlightForeground": "#C6FF00",
-        "textLink.foreground": "#C6FF00",
-        "progressBar.background": "#C6FF00",
-        "pickerGroup.foreground": "#C6FF00",
-        "tab.activeBorder": "#C6FF00",
-        "notificationLink.foreground": "#C6FF00"
-    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": false,
+    "workbench.colorTheme": "Seti Black",
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontSize": 21,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontSize": 24,
+    "files.autoSave": "onFocusChange",
+    "editor.fontFamily": "Anonymous Pro",
+    "editor.tabSize": 2,
+    "editor.lineHeight": 0,
+    "markdown.preview.fontSize": 36,
+    "editor.minimap.enabled": false,
+    "eslint.enable": true,
     "eslint.validate": [
         {
             "language": "vue",
@@ -100,7 +92,20 @@
             "autoFix": true
         }
     ],
-    "java.errors.incompleteClasspath.severity": "ignore",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.suggestSelection": "first",
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "liveshare.featureSet": "insiders"
 }
 ```
