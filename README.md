@@ -67,19 +67,20 @@
     "emmet.showAbbreviationSuggestions": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": false,
-    "workbench.colorTheme": "Seti Black",
+    "workbench.colorTheme": "Just Black",
     "window.zoomLevel": 1,
     "workbench.iconTheme": "vscode-icons",
-    "editor.fontSize": 21,
     "editor.fontLigatures": true,
     "terminal.integrated.fontSize": 24,
-    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 24,
+    "files.autoSave": "off",
     "editor.fontFamily": "Anonymous Pro",
-    "editor.tabSize": 2,
-    "editor.lineHeight": 0,
     "markdown.preview.fontSize": 36,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
     "editor.minimap.enabled": false,
     "eslint.enable": true,
+    "files.exclude": { "**/.*": true },
     "eslint.validate": [
         {
             "language": "vue",
@@ -100,7 +101,7 @@
         "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "HookyQR.beautify"
     },
     "[html]": {
         "editor.defaultFormatter": "HookyQR.beautify"
@@ -108,7 +109,78 @@
     "[css]": {
         "editor.defaultFormatter": "HookyQR.beautify"
     },
-    "liveshare.featureSet": "insiders"
+    "liveshare.featureSet": "insiders",
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveshare.anonymousGuestApproval": "accept",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.colorCustomizations": {},
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "keyword.operator.logical"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "keyword.operator.logical"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "name": "envKeys",
+                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
+                "settings": {
+                    "foreground": "#19354900"
+                }
+            },
+            {
+                "scope": [
+                    "keyword.operator.logical"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "scope": [
+                    "keyword.operator.logical"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            },
+            {
+                "name": "envKeys",
+                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
+                "settings": {
+                    "foreground": "#19354900"
+                }
+            }
+        ]
+    }
 }
 ```
 
