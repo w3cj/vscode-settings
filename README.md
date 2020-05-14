@@ -6,6 +6,8 @@
 
 # Extensions
 
+See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd3531d1b654794f65aa434b).
+
 ## Themes/Color
 
 * Current theme:
