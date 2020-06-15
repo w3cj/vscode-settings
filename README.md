@@ -64,125 +64,114 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
 
 ```json
 {
-    "explorer.openEditors.visible": 0,
-    "editor.snippetSuggestions": "top",
-    "emmet.showAbbreviationSuggestions": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": false,
-    "workbench.colorTheme": "Just Black",
-    "window.zoomLevel": 1,
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontSize": 24,
-    "editor.fontSize": 24,
-    "files.autoSave": "off",
-    "editor.fontFamily": "Anonymous Pro",
-    "markdown.preview.fontSize": 36,
-    "editor.tabSize": 2,
-    "editor.detectIndentation": true,
-    "editor.minimap.enabled": false,
-    "eslint.enable": true,
-    "files.exclude": { "**/.*": true },
-    "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.suggestSelection": "first",
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+  "explorer.openEditors.visible": 0,
+  "editor.snippetSuggestions": "top",
+  "emmet.showAbbreviationSuggestions": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "workbench.colorTheme": "Just Black",
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 24,
+  "files.autoSave": "off",
+  "editor.fontFamily": "Anonymous Pro",
+  "markdown.preview.fontSize": 36,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.minimap.enabled": false,
+  "eslint.enable": true,
+  // "files.exclude": { "**/.*": true },
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
     },
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+    {
+        "language": "typescript",
+        "autoFix": true
+      },
+    {
+      "language": "html",
+      "autoFix": true
     },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "liveshare.featureSet": "insiders",
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "liveshare.anonymousGuestApproval": "accept",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.colorCustomizations": {},
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "name": "envKeys",
-                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-                "settings": {
-                    "foreground": "#19354900"
-                }
-            },
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "name": "envKeys",
-                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-                "settings": {
-                    "foreground": "#19354900"
-                }
-            }
-        ]
+    {
+      "language": "javascript",
+      "autoFix": true
     }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "liveshare.featureSet": "insiders",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.anonymousGuestApproval": "accept",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {},
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ff1493"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.bitwise"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "todo-tree.tree.showScanModeButton": false,
+  "cSpell.userWords": [
+    "deno",
+    "feathersjs",
+    "middlewares",
+    "socketio",
+    "upsert",
+    "upvote"
+  ],
+  "editor.lineHeight": 0,
+  "editor.fontSize": 27
 }
 ```
 
