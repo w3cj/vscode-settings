@@ -17,21 +17,15 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
 * I used this darker modification of the above theme for a few videos:
   * [Seti-Black](https://marketplace.visualstudio.com/items?itemName=bobsparadox.seti-black)
 * [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-* [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=coenraads.bracket-pair-colorizer)
-  * Matching parenthesis and curly brackets to with colors
 
 ## Workflow
 
-* [advanced-new-file](https://marketplace.visualstudio.com/items?itemName=patbenatar.advanced-new-file)
-  * Adds the ability to create files anywhere in your workspace.
 * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
   * Automatically add HTML/XML close tag
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
   * Automatically rename paired HTML/XML tag
 * [FontSize ShortCuts](https://marketplace.visualstudio.com/items?itemName=fosshaas.fontsize-shortcuts)
   * Change the font size with keyboard shortcuts.
-* [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
-  * cmd ' (ctrl ' on win/linux) will cycle the first quote pair found (from the start/end of the section) between ', ", `
 
 ## IntelliSense/AutoComplete
 
@@ -41,14 +35,14 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   * Autocompletes npm modules in import/require statements
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
   * Autocompletes filenames
-* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+* [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
   * Vue tooling
 
 ## Style/Formatting
 
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   * Integrates ESLint JS
-* [Beautify](https://marketplace.visualstudio.com/items?itemName=hookyqr.beautify)
+* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   * Automatically format javascript, JSON, CSS, Sass, and HTML files.
 
 ## Useful/Extra
@@ -64,125 +58,114 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
 
 ```json
 {
-    "explorer.openEditors.visible": 0,
-    "editor.snippetSuggestions": "top",
-    "emmet.showAbbreviationSuggestions": false,
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": false,
-    "workbench.colorTheme": "Just Black",
-    "window.zoomLevel": 1,
-    "workbench.iconTheme": "vscode-icons",
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontSize": 24,
-    "editor.fontSize": 24,
-    "files.autoSave": "off",
-    "editor.fontFamily": "Anonymous Pro",
-    "markdown.preview.fontSize": 36,
-    "editor.tabSize": 2,
-    "editor.detectIndentation": true,
-    "editor.minimap.enabled": false,
-    "eslint.enable": true,
-    "files.exclude": { "**/.*": true },
-    "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
-    ],
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.suggestSelection": "first",
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+  "explorer.openEditors.visible": 0,
+  "editor.snippetSuggestions": "top",
+  "emmet.showAbbreviationSuggestions": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": false,
+  "workbench.colorTheme": "Just Black",
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontSize": 24,
+  "files.autoSave": "off",
+  "editor.fontFamily": "Anonymous Pro",
+  "markdown.preview.fontSize": 36,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.minimap.enabled": false,
+  "eslint.enable": true,
+  // "files.exclude": { "**/.*": true },
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
     },
-    "[json]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
+    {
+        "language": "typescript",
+        "autoFix": true
+      },
+    {
+      "language": "html",
+      "autoFix": true
     },
-    "[html]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
-    "liveshare.featureSet": "insiders",
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "diffEditor.ignoreTrimWhitespace": false,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "liveshare.anonymousGuestApproval": "accept",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "workbench.colorCustomizations": {},
-    "[scss]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "name": "envKeys",
-                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-                "settings": {
-                    "foreground": "#19354900"
-                }
-            },
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "scope": [
-                    "keyword.operator.logical"
-                ],
-                "settings": {
-                    "fontStyle": ""
-                }
-            },
-            {
-                "name": "envKeys",
-                "scope": "string.quoted.double.env,source.env,constant.numeric.env",
-                "settings": {
-                    "foreground": "#19354900"
-                }
-            }
-        ]
+    {
+      "language": "javascript",
+      "autoFix": true
     }
+  ],
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.suggestSelection": "first",
+  "[javascript]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "liveshare.featureSet": "insiders",
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveshare.anonymousGuestApproval": "accept",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {},
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "comment.block"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ff1493"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.bitwise"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "todo-tree.tree.showScanModeButton": false,
+  "cSpell.userWords": [
+    "deno",
+    "feathersjs",
+    "middlewares",
+    "socketio",
+    "upsert",
+    "upvote"
+  ],
+  "editor.lineHeight": 0,
+  "editor.fontSize": 27
 }
 ```
 
