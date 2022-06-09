@@ -41,7 +41,7 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   * Autocompletes npm modules in import/require statements
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
   * Autocompletes filenames
-* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+* [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
   * Vue tooling
 
 ## Style/Formatting
