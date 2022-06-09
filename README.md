@@ -16,7 +16,6 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   * [Seti-Monokai](https://marketplace.visualstudio.com/items?itemName=SmukkeKim.theme-setimonokai)
 * I used this darker modification of the above theme for a few videos:
   * [Seti-Black](https://marketplace.visualstudio.com/items?itemName=bobsparadox.seti-black)
-* [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 ## Workflow
 
@@ -58,13 +57,18 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
 
 ```json
 {
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true
+  },
+  "search.useIgnoreFiles": false,
   "explorer.openEditors.visible": 0,
   "editor.snippetSuggestions": "top",
   "emmet.showAbbreviationSuggestions": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.formatOnPaste": false,
   "workbench.colorTheme": "Just Black",
-  "window.zoomLevel": 1,
   "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": true,
   "terminal.integrated.fontSize": 24,
@@ -74,43 +78,28 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   "editor.tabSize": 2,
   "editor.detectIndentation": true,
   "editor.minimap.enabled": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
   "eslint.enable": true,
-  // "files.exclude": { "**/.*": true },
-  "eslint.validate": [
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-        "language": "typescript",
-        "autoFix": true
-      },
-    {
-      "language": "html",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    }
-  ],
+  "eslint.validate": ["vue", "react", "typescript", "html", "javascript"],
   "workbench.startupEditor": "newUntitledFile",
   "editor.suggestSelection": "first",
   "[javascript]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "liveshare.featureSet": "insiders",
   "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
+    "editor.defaultFormatter": "Vue.volar"
   },
   "diffEditor.ignoreTrimWhitespace": false,
   "[typescriptreact]": {
@@ -155,17 +144,13 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
       }
     ]
   },
-  "todo-tree.tree.showScanModeButton": false,
-  "cSpell.userWords": [
-    "deno",
-    "feathersjs",
-    "middlewares",
-    "socketio",
-    "upsert",
-    "upvote"
-  ],
+  "git.autofetch": true,
   "editor.lineHeight": 0,
-  "editor.fontSize": 27
+  "editor.fontSize": 17,
+  "window.zoomLevel": 2,
+  "vsicons.dontShowNewVersionMessage": true,
+  "bracketPairColorizer.depreciation-notice": false,
+  "extensions.ignoreRecommendations": true
 }
 ```
 
