@@ -4,54 +4,33 @@
 
 * [Anonymous Pro](https://www.marksimonson.com/fonts/view/anonymous-pro)
 
-# Extensions
-
-See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd3531d1b654794f65aa434b).
-
 ## Themes/Color
 
 * Current theme:
   * [Just Black](https://marketplace.visualstudio.com/items?itemName=nur.just-black)
-* Original theme I use in most videos:
+* Original theme I use in some videos:
   * [Seti-Monokai](https://marketplace.visualstudio.com/items?itemName=SmukkeKim.theme-setimonokai)
 * I used this darker modification of the above theme for a few videos:
   * [Seti-Black](https://marketplace.visualstudio.com/items?itemName=bobsparadox.seti-black)
 
-## Workflow
+## Exentsions
 
-* [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-  * Automatically add HTML/XML close tag
-* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-  * Automatically rename paired HTML/XML tag
+Most of the features of extensions I used to use are now built in to VS Code. These days I try to have as few extensions installed as possible, and only install extensions when I need them.
+
+These are the extensions I have installed most of the time:
+
 * [FontSize ShortCuts](https://marketplace.visualstudio.com/items?itemName=fosshaas.fontsize-shortcuts)
   * Change the font size with keyboard shortcuts.
-
-## IntelliSense/AutoComplete
-
-* [IntelliSense for CSS class names in HTML](https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion)
-  * Provides CSS class name completion for the HTML class attribute based on the definitions found in your workspace or external files referenced through the link element
-* [npm Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense)
-  * Autocompletes npm modules in import/require statements
-* [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense)
-  * Autocompletes filenames
-* [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
-  * Vue tooling
-
-## Style/Formatting
-
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+  * Nice / colorful icons for many different file types
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
   * Integrates ESLint JS
 * [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
   * Automatically format javascript, JSON, CSS, Sass, and HTML files.
-
-## Useful/Extra
-
-* [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost)
-  * Display inline the size of the required/imported package
+* [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+  * Vue tooling
 * [Quokka.js](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
   * Evaluate code/logs inline and show results in the editor
-* [VS Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
-  * Collaborative editing, debugging, and more inside VS Code
 
 # Settings
 
@@ -64,6 +43,7 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   },
   "search.useIgnoreFiles": false,
   "explorer.openEditors.visible": 0,
+  "editor.linkedEditing": true,
   "editor.snippetSuggestions": "top",
   "emmet.showAbbreviationSuggestions": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -97,7 +77,6 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "liveshare.featureSet": "insiders",
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
@@ -105,7 +84,6 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "liveshare.anonymousGuestApproval": "accept",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -141,15 +119,84 @@ See my full list of extensions [here](https://gist.github.com/w3cj/520eb023dd353
         "settings": {
           "fontStyle": ""
         }
+      },
+      {
+        "scope": [
+          "comment",
+          "comment.block"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ff1493"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.bitwise"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "comment",
+          "comment.block"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ff1493"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.bitwise"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "comment",
+          "comment.block"
+        ],
+        "settings": {
+          "fontStyle": "italic",
+          "foreground": "#ff1493"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator.logical",
+          "keyword.operator.arithmetic",
+          "keyword.operator.assignment",
+          "keyword.operator.bitwise"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "name": "envKeys",
+        "scope": "string.quoted.double.env,source.env,constant.numeric.env",
+        "settings": {
+          "foreground": "#19354900"
+        }
       }
     ]
   },
   "git.autofetch": true,
   "editor.lineHeight": 0,
-  "editor.fontSize": 17,
+  "editor.fontSize": 23,
   "window.zoomLevel": 2,
   "vsicons.dontShowNewVersionMessage": true,
-  "bracketPairColorizer.depreciation-notice": false,
   "extensions.ignoreRecommendations": true
 }
 ```
