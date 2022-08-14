@@ -13,7 +13,7 @@
 * I used this darker modification of the above theme for a few videos:
   * [Seti-Black](https://marketplace.visualstudio.com/items?itemName=bobsparadox.seti-black)
 
-## Exentsions
+## Extensions
 
 Most of the features of extensions I used to use are now built in to VS Code. These days I try to have as few extensions installed as possible, and only install extensions when I need them.
 
