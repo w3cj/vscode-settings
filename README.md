@@ -86,8 +86,6 @@ svelte.svelte-vscode
 Prisma.prisma
 otovo-oss.htmx-tags
 bierner.markdown-mermaid
-SmukkeKim.theme-setimonokai
-bobsparadox.seti-black
 ```
 
 # Settings
