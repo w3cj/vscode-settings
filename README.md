@@ -72,7 +72,6 @@ quicktype.quicktype
 vunguyentuan.vscode-postcss
 streetsidesoftware.code-spell-checker
 yoavbls.pretty-ts-errors
-quicktype.quicktype
 adpyke.codesnap
 rangav.vscode-thunder-client
 DotJoshJohnson.xml
